@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head><title>Stego + ML</title><link rel="stylesheet" href="/static/style.css"></head>
+<body>
+<div class="ui-card">
+<h2>Steganography with ML Detection</h2>
+<form method="POST" enctype="multipart/form-data">
+<label>Upload Image</label><input type="file" name="image" required>
+<label>Method</label><select name="method"><option>LSB</option><option>DCT</option></select>
+<label>Password</label><input type="password" name="password">
+<label>Message</label><textarea name="message"></textarea>
+<div class="action-row">
+<button name="action" value="encode" class="encode">Encode</button>
+<button name="action" value="decode" class="decode">Decode</button>
+<button name="action" value="detect" class="detect">Detect</button>
+</div></form>
+{% if result %}<div class="result">{{ result }}</div>{% endif %}
+</div></body></html>

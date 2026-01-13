@@ -1,0 +1,8 @@
+flask
+pillow
+numpy
+scipy
+cryptography
+opencv-python
+scikit-learn
+joblib
